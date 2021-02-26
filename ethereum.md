@@ -14,6 +14,7 @@
     * [Solidity extension](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
     * [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
     * [Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets](https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode)
+* [Metamask](https://metamask.io/)
 
 ## Help
 * [Node.js](https://nodejs.org/dist/latest-v14.x/docs/api/)
@@ -29,12 +30,14 @@
 * [Eat the Blocks - GitHub repository](https://github.com/jklepatch/eattheblocks)
 
 ## Truffle
+* View truffle, solc, web3... versions: `truffle version`
 * Initialize new and empty Ethereum project: `truffle init`
 * Create contract: `truffle create contract HelloWorld`
 * Create migration: `truffle create migration HelloWorld`
 * Compile: `truffle compile`
 * Deploy contracts: `truffle migrate`
 * Deploy contracts from the beginning (recompiling): `truffle migrate --reset`
+* Run a console: `run console` or in development mode: `run develop`
 
 ### Test
 ```
@@ -44,6 +47,7 @@ truffle develop
 > let inst
 > HelloWorld.deployed().then((instance) => { inst = instance; } );
 > inst.functionName("test", "parameter", 1);
+> inst.functionName("test", "parameter", 1).then((i) => {total = i;});
 ```
 
 ### Unbox
@@ -100,6 +104,10 @@ truffle develop
 > compile
 > migrate
 ```
+
+## ERC-20
+
+* [ERC-20 Token Standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 
 ## Web3
 
